@@ -1,6 +1,8 @@
 # Intro to Command Line
 
+Materials originally created by Pamela Fox for GDI SF and by GDI ATX, modified by Anastasia Lanz.
 Slides and materials are hosted at [http://anastasialanz.com/gdi-intro-to-cli/#/](http://anastasialanz.com/gdi-intro-to-cli/#/).
+
 
 ## Course description
 
