@@ -22,3 +22,7 @@ This class will introduce you to the Linux Command Line Interface.
 - Accessing another computer through SSH (Secure SHell)
 - Input/Output Redirection
 - Installing Programs
+
+### Prerequisites
+
+None. This is a beginner-level course.
