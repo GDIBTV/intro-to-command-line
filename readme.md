@@ -1,6 +1,8 @@
 # Intro to Command Line
 
+Materials originally created by Pamela Fox for GDI SF and by GDI ATX, modified by Anastasia Lanz.
 Slides and materials are hosted at [http://anastasialanz.com/gdi-intro-to-cli/#/](http://anastasialanz.com/gdi-intro-to-cli/#/).
+
 
 ## Course description
 
@@ -20,3 +22,7 @@ This class will introduce you to the Linux Command Line Interface.
 - Accessing another computer through SSH (Secure SHell)
 - Input/Output Redirection
 - Installing Programs
+
+### Prerequisites
+
+None. This is a beginner-level course.
