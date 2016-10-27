@@ -303,6 +303,320 @@
 				</ol>
 			</section>
 
+			<section>
+				<h2>Create a File</h2>
+				<h3><code>touch</code></h3>
+				<p>Use the <b>touch</b> command to create a new file.</p><br>
+				<p><em>The touch command expects the name of your new file as an argument.</em></p>
+			</section>
+
+			<section>
+				<h2>touch</h2>
+				<h4>(create a file)</h4>
+
+				<img src="img/touch.png" alt="touch">
+			</section>
+
+			<section>
+				<h2>Copy a File</h2>
+				<h3><code>cp</code></h3>
+
+				<p>Use the <b>cp</b> command to copy a file.</p><br>
+				<p>The <b>cp</b> command takes two arguments:</p>
+				<p>1st argument = the "origin" file</p>
+				<p>2nd argument = the "destination" file</p>
+				<pre><code class="html" contenteditable>$ cp resume.txt resume-copy.txt</code></pre>
+			</section>
+
+			<section>
+				<h2>cp</h2>
+				<h4>(copy a file)</h4>
+				<h5><code class="html" contenteditable>$ cp orig dest</code></h5>
+				<img src="img/cp.png" alt="cp">
+			</section>
+
+			<section>
+				<h2>Copy a Directory</h2>
+				<h3><code>cp -R</code></h3>
+
+				<p>Use the <b>cp -R</b> command to copy a directory.</p><br>
+				<p>The <b>cp -R</b> command takes two arguments:</p>
+				<p>1st argument = the "origin" directory</p>
+				<p>2nd argument = the "destination" directory</p>
+				<pre><code class="html" contenteditable>$ cp -R homework old-homework</code></pre>
+			</section>
+
+			<section>
+				<h2>cp -R</h2>
+				<h4>(copy a directory)</h4>
+				<h5><code class="html" contenteditable>$ cp -R orig dest</code></h5>
+				<img src="img/cp-R.png" alt="cp-R">
+			</section>
+
+			<section>
+				<h2>Moving (or renaming) a File/Directory</h2>
+
+				<p>Use the <b>mv</b> command to move a file or directory.</p><br>
+				<p>The <b>mv</b> command takes two arguments:</p>
+				<p>1st argument = the "origin"</p>
+				<p>2nd argument = the "destination"</p>
+			</section>
+
+			<section>
+				<h2>Move a File/Directory</h2>
+				<h3><code>mv orig dest</code></h3>
+
+				<img src="img/mvfile.png" alt="move file/directory">
+			</section>
+
+			<section>
+				<h2>Rename a File/Directory</h2>
+				<h3><code>mv orig dest</code></h3>
+
+				<img src="img/renamefile.png" alt="rename file/directory">
+			</section>
+
+			<section>
+				<h2>Remove a File</h2>
+				<h3><code>rm</code></h3>
+
+				<p>Use the <b>rm</b> command to remove a file.</p><br>
+				<p><em>Expects the name of the file you are removing as an argument.</em></p>
+			</section>
+
+			<section>
+				<h2>rm</h2>
+				<h4>(remove a file)</h4>
+
+				<img src="img/rmfile.png" alt="remove a file">
+			</section>
+
+			<section>
+				<h2>Develop it!</h2>
+				<h3>Exercise 2</h3>
+
+				<ol>
+				  <li>Create a folder called <b>gdi</b></li>
+				  <li>Make that folder your current working directory</li>
+				  <li>Create two files: <b>file1.txt</b>, <b>file2.txt</b></li>
+				  <li>Copy <b>file1.txt</b> and call the copy <b>file3.txt</b></li>
+				  <li>Create a directory called <b>folder1</b></li>
+				  <li>Move <b>file1.txt</b> into <b>folder1</b></li>
+				  <li>List the contents of <b>folder1</b> without going into it</li>
+				  <li>Rename <b>file1.txt</b> to <b>myfile.txt</b></li>
+				  <li>Remove the directory <b>folder1</b>, without deleting <b>myfile.txt</b> first</li>
+				  <li>Clear your terminal</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>View a File</h2>
+				<h3><code>cat, more, less</code></h3>
+
+				<p>Use the <b>cat</b> command to output (catenate) the contents of a file to the console.</p><br>
+				<p>Use the <b>more</b> or <b>less</b> commands to read a file:</p>
+				<ul>
+				  <li><b>more</b> allows you to step through the contents of a file a screen at a time</li>
+				  <li><b>less</b> allows you to step backwards or forwards</li>
+				  <ul>
+				    <li>Press <b>q</b> to exit out of this mode</li>
+				  </ul>
+				</ul>
+			</section>
+
+			<section>
+				<h2>cat</h2>
+				<h4>(catenate)</h4>
+
+				<p><em>will output the entire file</em></p>
+				<img src="img/cat.png" alt="cat">
+			</section>
+
+			<section>
+				<h2>more</h2>
+
+				<img src="img/more.png" alt="more">
+			</section>
+
+			<section>
+				<h2>less</h2>
+
+				<img src="img/less.png" alt="less">
+			</section>
+
+			<section>
+				<h2>Edit a File</h2>
+
+				<p>You can use various editors built into bash:</p>
+				<p><code>$ vi myfile.txt</code></p>
+				<p><code>$ emacs myfile.txt</code></p>
+				<p><code>$ pico myfile.txt</code></p><br>
+
+				<p>Or on a Mac, you can open with any desktop app:</p>
+				<pre><code class="html" contenteditable>$ open -a TextEdit myfile.txt</code></pre>
+				<p>Or with the default editor:</p>
+				<pre><code class="html" contenteditable>$ open -t myfile.txt</code></pre>
+			</section>
+
+			<section>
+				<h2>Search within a File</h2>
+				<h3><code>grep</code></h3>
+
+				<p>Use the <b>grep</b> command to search in files.</p><br>
+				<p>The grep command outputs only the lines in a file that match a given pattern.</p><br>
+				<p>The 1st argument is the pattern to match, and the 2nd, 3rd, and so on are the files to search within.</p>
+				<pre><code class="html" contenteditable>$ grep pattern file</code></pre>
+			</section>
+
+			<section>
+				<h2>grep</h2>
+				<h4>(search within a file for text that matches a pattern)</h4>
+				<img src="img/grep.png" alt="grep">
+			</section>
+
+			<section>
+				<h2>Wildcard Matching</h2>
+
+				<p>Use the <b>*</b> (asterisk) symbol to match <em>anything</em>.</p><br>
+				<p>You can use this to search through all of a particular file type.</p>
+				<pre><code class="html" contenteditable>$ grep hello *.txt</code></pre><br>
+				<p>The shell will build a list of all the files that match the non-asterisk part.</p>
+			</section>
+
+			<section>
+				<h2>Finding Files</h2>
+				<h3><code>find</code></h3>
+
+				<p>Use the <b>find</b> command to find files according to name/metadata.</p><br>
+
+				<p>Find all txt files under the current directory:</p>
+				<pre><code class="html" contenteditable>find . -name '*.txt' -print</code></pre>
+			</section>
+
+			<section>
+				<h2>find</h2>
+				<h4>(finding files)</h4>
+
+				<img src="img/find.png" alt="find">
+			</section>
+
+			<section>
+				<h2>Redirecting Output</h2>
+
+				<p>By default, input comes from the screen and output goes to the screen.</p><br>
+				<p>You can use <b><</b> and <b>></b> to redirect input/output.</p><br>
+
+				<p>A practical example: Save results of search in a file:</p>
+				<pre><code class="html" contenteditable>grep hello *.txt > results.txt</code></pre>
+			</section>
+
+			<section>
+				<h2>Redirecting Output</h2>
+
+				<img src="img/redirection.png" alt="redirection">
+			</section>
+
+			<section>
+				<h2>Redirecting Output</h2>
+
+				<p>Use the <b>echo</b> command to add a new line of text.</p><br>
+				<p>Use the <b>></b> to <em>replace</em> the contents of a file.</p><br>
+				<p>Use the <b>>></b> to <em>add to</em> the end of a file.</p>
+			</section>
+
+			<section>
+				<h2>Redirecting Output</h2>
+
+				<img src="img/echo.png" alt="redirection">
+			</section>
+
+			<section>
+				<h2>Develop it!</h2>
+				<h3>Exercise 3</h3>
+
+				<ol>
+				  <li>In the <b>gdi</b> directory, output the contents of <b>file2.txt</b> to the terminal</li>
+				  <li>Add <a href="http://www.lipsum.com/" target="_blank">a sentence</a> to <b>file2.txt</b></li>
+				  <li>Add a few more sentences to <b>file2.txt</b></li>
+				  <li>Search the file for the word of your choice and add the results to <b>file3.txt</b></li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>Command Line Movement</h2>
+
+				<ul>
+				  <li><b>ctrl-a</b>: jump to beginning of line</li>
+				  <li><b>ctrl-e</b>: jump to end of line</li>
+				  <li><b>alt-f</b>: jump forward a word</li>
+				  <li><b>alt-b</b>: jump back a word</li>
+
+				  <li><b>alt-d</b>: delete word</li>
+				  <li><b>alt-t</b>: transpose two words</li>
+
+				  <li><b>ctrl-xx</b>: jump back to your last edit, again to get back to original position</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>More Command Line Movement</h2>
+
+				<ul>
+				  <li>The <b>left/right arrow keys</b> let you edit within a command</li>
+				  <li>The <b>up/down arrow keys</b> let you select previous commands</li>
+				  <li><b>tab</b> auto-completes filenames</li>
+				</ul><br><br>
+				<p>Lots more, and you can create your own.</p>
+			</section>
+
+			<section>
+				<h2>Command Line History</h2>
+
+				<p>Use the <b>history</b> command to see a list of all your previous commands.</p><br>
+				<p>Each command will be listed next to a line number.</p><br>
+
+				<p>A few history-related commands:</p>
+				<ul>
+				  <li><b>!!</b>: Latest command</li>
+				  <li><b>!568</b>: Command by line #</li>
+				  <li><b>!open</b>: Command matching string</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>history</h2>
+
+				<img src="img/history.png" alt="history">
+			</section>
+
+			<section>
+				<h2>Develop it!</h2>
+				<h3>Exercise 4</h3>
+
+				<ol>
+				  <li>Use your up and down arrows to locate a past command with one or more arguments</li>
+				  <li>Jump to the beginning of the line</li>
+				  <li>Jump to the end of the line</li>
+				  <li>Look at your command line history</li>
+				  <li>Begin to type a previous command and experiment with using tab to complete it</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>Free Resources</h2>
+
+				<ul>
+				  <li><a href="https://www.learnenough.com/command-line-tutorial" target="_blank">Learn Enough Command Line to Be Dangerous</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Thanks!</h2>
+
+				<h4>anastasialanz@gmail.com</h4>
+				<h4><a href="https://twitter.com/anastasialanz">@anastasialanz</a></h4>
+			</section>
+
 
 		</div>
 		<footer>
