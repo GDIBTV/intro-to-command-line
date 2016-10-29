@@ -137,6 +137,16 @@
 			</section>
 
 			<section>
+				<h2>Love the Tab</h2>
+				<p>Tab completion autocompletes commands and filenames.</p>
+				<ul>
+					<li>Pressing &lt;tab&gt; once autocompletes a unique instance.</li>
+					<li>Pressing &lt;tab&gt; twice gives you all the options available.</li>
+				</ul>
+				<pre><code class="html" contenteditable="">$ cd P</code></pre>
+			</section>
+
+			<section>
 				<h2>The Current Directory</h2>
 				<h3><code>pwd</code></h3>
 				<h4>(Print Working Directory)</h4>
@@ -563,6 +573,7 @@
 				  <li><b>ctrl-e</b>: jump to end of line</li>
 				  <li><b>ctrl-u</b>: clear the line</li>
 				  <li><b>ctrl-l</b>: shortcode for clear</li>
+					<li><b>ctrl-r</b>: search previous commands</li>
 					<li><b>ctrl-c</b>: get out of trouble</li>
 					<li><b>ctrl-d</b>: exit terminal</li>
 				</ul>
@@ -609,6 +620,58 @@
 				  <li>Jump to the end of the line</li>
 				  <li>Look at your command line history</li>
 				  <li>Begin to type a previous command and experiment with using tab to complete it</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>curl</h2>
+				<p>A command line tool for getting or sending files using URL syntax.</p>
+				<pre><code class="html" contenteditable>$ which curl</code></pre>
+				<aside class="notes">Type the above command to see if you have curl installed. If it's blank, you need to look up how to install curl on your operating system.</aside>
+			</section>
+
+			<section>
+				<h2>Download a file with curl</h2>
+				<p>The command below will download a .txt file</p>
+				<pre><code class="html" contenteditable>$ curl -OL example.com/pugs.txt</code></pre>
+			</section>
+
+			<section>
+				<h2>head</h2>
+				<p>Shows the first 10 lines of a file.</p>
+				<img src="img/head.png" alt="head command">
+			</section>
+
+			<section>
+				<h2>tail</h2>
+				<p>Shows the last 10 lines of a file.</p>
+				<img src="img/tail.png" alt="tail command">
+			</section>
+
+			<section>
+				<h2>wc</h2>
+				<h3>(Word count)</h3>
+				<p>This command shows newline count, word count and byte count.</p>
+				<img src="img/wc.png">
+			</section>
+
+			<section>
+				<h2>Pipe</h2><br>
+				<p>The output of one command is the input of another command.</p><br>
+				<pre><code class="html">$ head cat.txt | wc</code></pre><br>
+				<p>Use this command to chain multiple commands together.</p>
+			</section>
+
+			<section>
+				<h2>Develop it!</h2>
+				<h3>Exercise 5</h3>
+
+				<ol>
+					<li>Download the cat.txt file by running this command:<pre><code class="html" contenteditable>$ curl -OL anastasialanz.com/cat.txt</code></pre></li>
+					<li>Use the <b>head</b> command to see the first 10 lines of text.</li>
+					<li>Use the <b>tail</b> command to see the last 10 lines of text.</li>
+					<li>Pipe the results of <b>grep cat cat.txt</b> command through <b>wc</b> to count the number of times "cat" appears.</li>
+					<li>Using the <b>grep</b> man page, find the option for case insensitive matching. Try to find how many times "cat" and "Cat" appear.</li>
 				</ol>
 			</section>
 
