@@ -1,6 +1,6 @@
 # Intro to Command Line
 
-Slides and materials are hosted at [http://girldevelopit.github.io/intro-to-command-line/#/](http://girldevelopit.github.io/intro-to-command-line/#/)
+Slides and materials are hosted at [http://gdibtv.github.io/intro-to-command-line/#/](http://gdibtv.github.io/intro-to-command-line/#/)
 
 ---------------------------
 
