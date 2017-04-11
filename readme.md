@@ -21,11 +21,11 @@ In all seriousness, there are many introductory courses for common web developme
 
 In this introductory course, we will cover the basics of using a terminal to control *nix operating systems. In addition, you will also learn how to use it to manipulate such things as the filesystem, the built-in help commands, file contents, program I/O, and remote systems. The course will be mostly interactive and participants will be asked to run commands on their own computers.
 
-###Prerequisites: 
+### Prerequisites: 
 
 Programming experience is not required. You must have administrative privileges on your laptop. This course is introductory, so if you already have command line experience, you might find this course a bit slow!
 
-###Tech Requirements:
+### Tech Requirements:
 
 For Mac & Linux users - If your computer is less than 10 years old you should be good to go. You don't need to install additional software.
 
